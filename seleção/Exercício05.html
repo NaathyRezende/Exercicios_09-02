@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="pt-br"/>
+        <title> Olá Mundo </title>
+    </head>
+    <body>
+         <h1> Olá Mundo! </h1>
+
+         <form>
+
+            <input type="text" id="numero" placeholder="Digite um numero">
+
+            <button type="button" onclick="verfNumero()">OK</button>
+
+         </form>
+
+        <span id="saida"></span>
+         
+    </body>
+</html>
+
+<script>
+
+    function verfNumero(){
+
+        var n = parseFloat(document.getElementById("numero").value);
+        if (n >= 0) {
+
+            document.getElementById("saida").innerHTML = "POSITIVO";
+
+        }else{
+
+            document.getElementById("saida").innerHTML = "NEGATIVO";  
+
+        }
+
+        
+
+
+    }
+
+</script>
